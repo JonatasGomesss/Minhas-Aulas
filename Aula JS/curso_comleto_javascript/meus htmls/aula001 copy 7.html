@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudando</title>
+</head>
+<style>
+    body{
+        background-color: rgb(250, 207, 151);
+    }
+    #clicar{
+        position: absolute;
+        left:45%;
+        top: 35%;
+        width: 150px;
+        height: 150px;
+        background-color: rgb(166, 239, 239);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div id="clicar" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">
+        clicar aqui.
+    </div>
+
+    <script>
+         var clicou = document.getElementById('clicar')
+
+        function clicar() {
+            clicou.style.background = 'blue'
+        }
+        function entrou() {
+            clicou.innerText = 'entrou'
+        }
+        function saiu() {
+            clicou.innerText ='saiu'
+        }
+        
+    </script>
+</body>
+</html>

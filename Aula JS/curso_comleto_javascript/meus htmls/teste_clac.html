@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<body>
+    <h1>calculadora</h1> 
+
+    <p>seu primeiro numero.</p>
+    <input type="number" id="num1"> <br> 
+
+    <p>seu primeiro numero.</p>
+    <input type="number" id="num2"> <br> 
+
+    <h3>escolha se vai...</h3>
+    <button onclick="somar()">somar</button>
+    <button onclick="multipliar()">multipliar</button>
+    <button onclick="dividir()">dividir</button>
+    <button onclick="subtrasao()">subtrasão</button>
+
+    <script>
+
+        function somar(){
+           var num1 = Number(document.getElementById("num1").value)
+           var num2 = Number(document.getElementById("num2").value)
+
+           var result = num1 + num2
+           alert(result)
+        }
+        function multipliar(){
+           var num1 = Number(document.getElementById("num1").value)
+           var num2 = Number(document.getElementById("num2").value)
+
+           var result = num1 * num2
+           alert(result)
+        }
+        function dividir(){
+           var num1 = Number(document.getElementById("num1").value)
+           var num2 = Number(document.getElementById("num2").value)
+
+           var result = num1 / num2
+           alert(result)
+        }
+        function subtrasao(){
+           var num1 = Number(document.getElementById("num1").value)
+           var num2 = Number(document.getElementById("num2").value)
+
+           var result = num1 - num2
+           alert(result)
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>calculadora só de soma kkkkkkkkkkkk.</h2>
+
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="somar()">Somar</button>
+    <p id="res"></p>
+
+    <script>
+        function somar() {
+            var numero1 = Number(document.getElementById('num1').value)
+            var numero2 = Number(document.getElementById('num2').value)
+            
+            var resposta = document.getElementById('res')
+            resposta.innerHTML =  `A soma do ${numero1} e o ${numero2} é de ${numero1 + numero2}`
+
+            if (numero1 + numero2 == 6) {
+                alert('seu numero é 6')
+            } else {
+                alert('erro')
+            }
+        }
+        
+    </script>
+</body>
+</html>

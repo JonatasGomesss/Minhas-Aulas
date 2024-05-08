@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p id="cor">esse paragrafo pode mudar de cor basta apretar esse botão.</p>
+    <button onclick="mudarCor()">mudar de cor aqui.</button>
+
+    <p id="texto">já esse pode mudar o texto.</p>
+    <button onclick="mudarTexto()"> mudar o texto</button>
+
+    <script>
+        function mudarCor() {
+            var textMudar = document.getElementById('cor')
+            textMudar.style.color = 'blue'  
+        }
+        function mudarTexto() {
+            var textMudar = document.getElementById('texto')
+            textMudar.innerText= 'novo texto'
+        }
+    </script>
+</body>
+</html>
